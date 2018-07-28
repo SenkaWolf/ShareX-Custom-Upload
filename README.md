@@ -40,7 +40,7 @@ This is the url your output will be, usually http://www.domain.com/i/uploads/. O
 ```
 
 # ShareX Configuration
-Next we need to setup our ShareX to use the custom uploader
+Next we need to setup our ShareX to use the custom uploader. A screenshot of the setup can be seen below!
 ```
 1. From the ShareX main application we go to Destinations > Destination Settings
 2. Scroll down to 'custom uploaders' add a new profile
@@ -53,4 +53,6 @@ Next we need to setup our ShareX to use the custom uploader
 ```
 
 # Preview of the gallery page
-![Preview of gallery](http://jiy.io/22.40.35-07.03.17.png)
+![Preview of Login](https://github.com/SenkaWolf/ShareX-Custom-Upload/blob/master/Screenshots/Login.png?raw=true)
+![Preview of Image Server](https://github.com/SenkaWolf/ShareX-Custom-Upload/blob/master/Screenshots/Image%20Server.png?raw=true)
+![Preview of ShareX Setup](https://github.com/SenkaWolf/ShareX-Custom-Upload/blob/master/Screenshots/ShareX.png?raw=true)
