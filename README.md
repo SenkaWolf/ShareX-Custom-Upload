@@ -2,18 +2,26 @@
 A little PHP script created for uploading custom sharex files to your own webserver
 
 # Setup
-First we start by uploading the contents of the 'src' directory to the root of our website
+First we start by uploading the contents of the 'public_html' directory to the root of our website
 
-Next is the configuration file, found in /u/config.php here there are a few key settings
+Next is the configuration file, found in /i/protected/config.php here there are a few key settings
 ```
+/* Image Server Index LogIn*/
+/* Use the below details to ;ogin to view uploaded images. This is usually at http://www.domain.com/i/login.php */
+	global $USERNAME;
+	$USERNAME = 'Login';
+
+	global $PASSWORD;
+	$PASSWORD = 'Password';
+
 /* This is a secure key that only you should know, an added layer of security for the image upload */
   'secure_key' => 'somerandomlongstringoftextforkey',
 
-/* This is the url your output will be, usually http://www.domain.com/u/, also going to this url will be the gallery page */
-  'output_url' => 'http://example.com/u/',
+This is the url your output will be, usually http://www.domain.com/i/uploads/. OR setup a subdomain called 'i' to point at the direct to the left and then use http://i.domain.com/ */
+  'output_url' => 'http://www.domain.com/i/uploads/',
 
 /* This is a redirect url if the script is accessed directly */
-  'redirect_url' => 'http://example.com/',
+  'redirect_url' => 'http://domain.com/',
 
 /* This is a list of IPs that can access the gallery page (Leave empty for universal access) */
   'allowed_ips' => ['192.168.0.0', '0.0.0.0'],
@@ -36,7 +44,7 @@ Next we need to setup our ShareX to use the custom uploader
 ```
 1. From the ShareX main application we go to Destinations > Destination Settings
 2. Scroll down to 'custom uploaders' add a new profile
-3. Request type POST, the url should be http://www.example.com/upload.php
+3. Request type POST, the url should be http://www.domain.com/upload.php
 4. File form name: "d" (without quotation marks)
 5. Arguments are:
     - key, this should be set to the 'secure key' you set in your config.php
@@ -46,6 +54,3 @@ Next we need to setup our ShareX to use the custom uploader
 
 # Preview of the gallery page
 ![Preview of gallery](http://jiy.io/22.40.35-07.03.17.png)
-
-# Planned Features
-[View the tasks board here](https://github.com/JoeGandy/ShareX-Custom-Upload/projects/1)
