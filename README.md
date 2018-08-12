@@ -1,6 +1,11 @@
 # ShareX-Custom-Upload
 A little PHP script created for uploading custom sharex files to your own webserver
 
+## Changes to the original.
+* Added login screen to view captured images (protects confidential images).
+* Restructured directory layout so all captured images go into their own directory.
+* Changes to CSS styling to make look more funkier.
+
 # Setup
 First we start by uploading the contents of the 'public_html' directory to the root of our website
 
