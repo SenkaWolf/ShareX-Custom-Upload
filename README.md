@@ -36,12 +36,6 @@ This is the url your output will be, usually http://www.domain.com/i/uploads/. O
 
 /* Heading text at the top of the gallery page */
   'heading_text' => 'Uploading Site',
-  
-/* Delete file option (true to enable, disabled by default) */
-    'enable_delete' => false,
-    
-/* Show image in tooltip  (true to enable, disabled by default) */
-    'enable_tooltip' => false,
 ```
 
 # ShareX Configuration
